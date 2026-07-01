@@ -748,6 +748,14 @@
       }
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17653836388"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17653836388');
+  </script>
 </head>
 <body>
 
@@ -820,7 +828,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container fade-in">
       <div class="section-label">About me</div>
       <h2 class="section-title">Someone <em>in their corner</em></h2>
@@ -844,7 +852,7 @@
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials">
+  <section class="testimonials" id="testimonials">
     <div class="container fade-in">
       <div class="section-label">Testimonials</div>
       <h2 class="section-title">What parents <em>are saying</em></h2>
@@ -923,15 +931,15 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" placeholder="07803 569324" />
+                <input type="tel" id="phone" name="phone" placeholder="07803 569324" required />
               </div>
               <div class="form-group">
                 <label for="level">Level needed</label>
-                <select id="level" name="level">
+                <select id="level" name="level" required>
                   <option value="">Select one</option>
-                  <option value="SATs">SATs (KS2)</option>
-                  <option value="GCSE">GCSE Maths</option>
-                  <option value="unsure">Not sure yet</option>
+                  <option value="Primary / SATs">Primary / SATs</option>
+                  <option value="KS3 / Secondary School">KS3 / Secondary School</option>
+                  <option value="GCSE">GCSE</option>
                 </select>
               </div>
             </div>
